@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="speaker-form-header">
+        <div>
+            <img class="logo" img src="logo.jpg" width="100"/><br>
+        </div>
+        <h2><span>Welcome to </span>Maks!</h1>
+        <p><span>Want to order? Fill out this form!</span></p>
+    </header>
+
+    <form action="" method="get" class="speaker-form">
+        <div class="form-row">
+            <label for="full-name">Name: </label>
+            <input type="text" id="full-name" name="full-name" placeholder="Nickname">
+        </div>
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="mak@gmail.com">
+        </div>
+
+        <div class="form-row">
+            <label for="age">Age: </label>
+            <input type="number" placeholder="ex. 18"/>
+        </div>
+
+        <div id="dropdown">
+            <button class="dropdown-toggle">
+                <span style="color: #fff;">Menu</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+
+            <ul class="menu">
+                <li class="menu-item"><a href="">Italian</a></li>
+                <li class="menu-item"><a href="">Chinese</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Healthy Options</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+
+                <ul class="submenu">
+                    <li class="submenu-item"><a href= "#">Vegetarian</a></li>
+                </ul>
+                </li>
+                    
+                    <li class="menu-item"><a href="#">Mexican</a></li>
+                    <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                  <span>Specials</span>
+                  <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <ul class="submenu">
+
+                </ul>  
+                </li>
+            </ul>
+        </div>
+
+        <fieldset class='legacy-form-row clearfix'>
+            <legend>Delivery:</legend>
+
+            <input id='delivery-1' name='talk-type' type='radio' value='dine-in' />
+            <label for='delivery-1' class='radio-label'>Dine-In</label>
+            <input id='delivery-2' name='talk-type' type='radio' value='take-out' />
+            <label for='delivery-2' class='radio-label'>Take-Out</label>
+        </fieldset>
+
+        <div class="form-row">
+            <label for="comment">Comments:</label>
+            <textarea name="comment" id="comment" placeholder="Place your comment here"></textarea>
+        </div>
+        
+        <div class="buttons">   
+            <button type="submit" class="cancel">Cancel</button>
+            <button type="submit" class="order">Place Order</button>
+        </div>
+       
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
